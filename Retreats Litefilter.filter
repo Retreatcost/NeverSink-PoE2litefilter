@@ -166,7 +166,7 @@ PlayEffect Cyan
 # Special Highlight - Breach Rings
 Show 
 Rarity Rare
-BaseType "Breach Ring"
+BaseType == "Breach Ring"
 SetTextColor 0 240 190
 SetBorderColor 0 240 190
 SetFontSize 40
@@ -176,7 +176,7 @@ PlayAlertSound 2 300
 
 Show 
 Rarity <= Magic
-BaseType "Breach Ring"
+BaseType == "Breach Ring"
 SetTextColor 0 240 190
 SetFontSize 35
 MinimapIcon 2 Cyan Diamond
