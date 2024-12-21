@@ -292,7 +292,7 @@ SetFontSize 40
 
 Show
 Class "Currency"
-BaseType "Distilled" "Catalyst" "Essence of"
+BaseType "Distilled" "Catalyst"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 76 51 12
@@ -301,13 +301,24 @@ PlayEffect White
 MinimapIcon 2 White Circle
 SetFontSize 40
 
+# Essences
+Show
+  Class "Currency"
+	BaseType "Essence of"
+	SetFontSize 34
+	SetTextColor 170 158 130
+	SetBackgroundColor 2 33 62
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+	SetBorderColor 170 158 130
+
 # Chance shard in endgame
 Show
 	AreaLevel >= 65
 	Class "Currency"
 	BaseType "Chance Shard"
 	SetTextColor 170 158 130
-	SetBorderColor 190 178 135
+	SetBorderColor 210 178 135
 	SetBackgroundColor 49 25 0
 	SetFontSize 33
 
@@ -316,7 +327,7 @@ Show
 	Class "Currency"
 	BaseType "Chance Shard"
 	SetTextColor 170 158 130
-	SetBorderColor 190 178 135
+	SetBorderColor 210 178 135
 	SetBackgroundColor 49 25 0
 	PlayEffect Brown Temp
 	MinimapIcon 2 Brown Circle
@@ -349,7 +360,7 @@ Show
 	BaseType "Orb of Transmutation" "Regal Shard"
 	SetFontSize 33
 	SetTextColor 170 158 130
-	SetBorderColor 190 178 135
+	SetBorderColor 190 178 135 180
 	SetBackgroundColor 0 20 39
 
 # Common magic currency
