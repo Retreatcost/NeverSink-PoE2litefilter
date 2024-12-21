@@ -279,27 +279,37 @@ PlayEffect White Temp
 MinimapIcon 1 White Kite
 SetFontSize 35
 
+# Omens
 Show
-Class "Omen"
-BaseType "Omen of"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 2 White Circle
-SetFontSize 40
+	Class "Omen"
+	BaseType "Omen of"
+	SetBorderColor 3 142 167
+	SetBorderColor 3 142 167
+	SetBackgroundColor 0 72 100
+	PlayAlertSound 3 300
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+	SetFontSize 40
 
+# Distilled
 Show
-Class "Currency"
-BaseType "Distilled" "Catalyst"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 2 White Circle
-SetFontSize 40
+	Class "Currency"
+	BaseType "Distilled"
+	SetBackgroundColor 48 29 29
+	PlayAlertSound 10 300
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+	SetFontSize 35
+
+# Catalysts
+Show
+	Class "Currency"
+	BaseType "Catalyst"
+	SetBackgroundColor 39 0 20
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Circle
+	SetFontSize 35
 
 # Essences
 Show
