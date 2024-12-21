@@ -39,7 +39,7 @@ PlayEffect Red
 MinimapIcon 0 Red Star
 
 Show
-BaseType == "Distilled Isolation" "Distilled Suffering"
+BaseType "Distilled Isolation" "Distilled Suffering"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -55,7 +55,7 @@ MinimapIcon 0 Red Star
 
 Show
 	StackSize >= 5000
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetFontSize 35
 	SetTextColor 235 200 110
 	SetBorderColor 235 200 110
@@ -66,25 +66,25 @@ Show
 
 Show
 	StackSize >= 1000
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetFontSize 30
 	SetTextColor 198 171 88
 	MinimapIcon 1 Yellow Circle
 
 Show
 	StackSize >= 500
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetFontSize 27
   SetTextColor 198 171 88
 
 Show
 	StackSize >= 100
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetFontSize 25
 	SetTextColor 198 171 88
 
 Show
-	BaseType == "Gold"
+	BaseType "Gold"
 	SetFontSize 23
 	SetTextColor 198 171 88
 	SetBackgroundColor 20 20 0 180
@@ -166,7 +166,7 @@ PlayEffect Cyan
 # Special Highlight - Breach Rings
 Show 
 Rarity Rare
-BaseType == "Breach Ring"
+BaseType "Breach Ring"
 SetTextColor 0 240 190
 SetBorderColor 0 240 190
 SetFontSize 40
@@ -176,7 +176,7 @@ PlayAlertSound 2 300
 
 Show 
 Rarity <= Magic
-BaseType == "Breach Ring"
+BaseType "Breach Ring"
 SetTextColor 0 240 190
 SetFontSize 35
 MinimapIcon 2 Cyan Diamond
@@ -322,8 +322,8 @@ Class "Currency"
 BaseType "Shard"
 
 Show
-	Class == "Stackable Currency"
-	BaseType == "Scroll of Wisdom"
+	Class "Currency"
+	BaseType "Scroll of Wisdom"
 	SetFontSize 35
 	SetBackgroundColor 24 4 4
 
@@ -548,4 +548,4 @@ Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One 
 # Get a new filter from www.filterblade.xyz
 
 Show
-BaseType == "Expert Laced Boots"
+BaseType "Expert Laced Boots"
