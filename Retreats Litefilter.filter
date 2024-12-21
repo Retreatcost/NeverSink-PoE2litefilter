@@ -222,51 +222,60 @@ Rarity <= Magic
 # Socketables and Special Character Equipment
 #--------------------------
 
-# Currency Tier A: Gemcutter, Annullment
+# Rarer currency
 Show
 Class "Currency"
 BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
-SetTextColor 255 255 255 255
-SetBorderColor 255 255 255 255
-SetBackgroundColor 240 90 35
+SetTextColor 255 190 0
+SetBorderColor 255 190 0
+SetBackgroundColor 170 158 130 225
 PlayAlertSound 1 300
-PlayEffect White
-MinimapIcon 1 Yellow Circle
-SetFontSize 45
-
-# Currency Tier B: Exalt
-Show
-Class "Currency"
-BaseType "Exotic Coinage" "Exalted Orb"
-SetTextColor 255 207 92
-SetBorderColor 255 207 92
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
 PlayEffect Yellow
 MinimapIcon 1 Yellow Circle
 SetFontSize 45
 
-Show
-BaseType "Gold Key" "Silver Key" "Bronze Key"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 2 White Circle
-SetFontSize 40
-
-# Currency Tier B: Regal, Vaal ...
+# Exalted
 Show
 Class "Currency"
-BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 2 White Circle
-SetFontSize 40
+BaseType  "Exalted Orb"
+SetFontSize 45
+SetTextColor 170 158 130
+SetBorderColor 210 178 135 230
+SetBackgroundColor 113 98 78 230
+PlayAlertSound 5 300
+PlayEffect Yellow
+MinimapIcon 0 Yellow Circle
+
+# Misc
+Show
+	BaseType "Exotic Coinage" "Gold Key" "Silver Key" "Bronze Key"
+	SetFontSize 40
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+# Vaal Orb
+Show
+	Class "Currency"
+	BaseType "Vaal Orb"
+	SetFontSize 40
+	SetBackgroundColor 25 0 0
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+	PlayAlertSound 2 200
+
+# Regular Currency
+Show
+	Class "Currency"
+  BaseType "Gemcutter's Prism" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
+	SetFontSize 40
+	SetBackgroundColor 0 0 0
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Circle
+	PlayAlertSound 6 200
 
 # Simulacrum Splinters
 Show
@@ -290,49 +299,49 @@ Show
 	SetBackgroundColor 65 20 80
 	PlayEffect Purple Temp
 	MinimapIcon 2 Purple Kite
-	PlayAlertSound 13 300
+	PlayAlertSound 13 200
 
 # Artifacts
 Show
 	Class "Currency"
 	BaseType " Artifact" 
+	SetFontSize 35
 	SetTextColor 101 158 211
 	PlayAlertSound 1 200
 	PlayEffect Grey Temp
 	MinimapIcon 1 White Kite
-	SetFontSize 35
 
 # Omens
 Show
 	Class "Omen"
 	BaseType "Omen of"
+	SetFontSize 40
 	SetBorderColor 3 142 167
 	SetBorderColor 3 142 167
 	SetBackgroundColor 0 72 100
 	PlayAlertSound 3 300
 	PlayEffect Yellow
 	MinimapIcon 2 Yellow Circle
-	SetFontSize 40
 
 # Distilled
 Show
 	Class "Currency"
 	BaseType "Distilled"
+	SetFontSize 35
 	SetBackgroundColor 48 29 29
-	PlayAlertSound 10 300
+	PlayAlertSound 10 200
 	PlayEffect Yellow
 	MinimapIcon 2 Yellow Circle
-	SetFontSize 35
 
 # Catalysts
 Show
 	Class "Currency"
 	BaseType "Catalyst"
+	SetFontSize 35
 	SetBackgroundColor 39 0 20
-	PlayAlertSound 2 300
+	PlayAlertSound 2 200
 	PlayEffect Yellow
 	MinimapIcon 0 Yellow Circle
-	SetFontSize 35
 
 # Essences
 Show
@@ -340,31 +349,31 @@ Show
 	BaseType "Essence of"
 	SetFontSize 34
 	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
 	SetBackgroundColor 2 33 62
 	PlayEffect Yellow
 	MinimapIcon 2 Yellow Circle
-	SetBorderColor 170 158 130
 
 # Chance shard in endgame
 Show
 	AreaLevel >= 65
 	Class "Currency"
 	BaseType "Chance Shard"
+	SetFontSize 33
 	SetTextColor 170 158 130
 	SetBorderColor 210 178 135
 	SetBackgroundColor 49 25 0
-	SetFontSize 33
 
 # Chance shard
 Show
 	Class "Currency"
 	BaseType "Chance Shard"
+	SetFontSize 35
 	SetTextColor 170 158 130
 	SetBorderColor 210 178 135
 	SetBackgroundColor 49 25 0
 	PlayEffect Brown Temp
 	MinimapIcon 2 Brown Circle
-	SetFontSize 35
 
 # Quality currency in endgame
 Show
@@ -383,9 +392,9 @@ Show
 	SetFontSize 35
 	SetTextColor 170 158 130
 	SetBorderColor 190 178 135 180
+	SetBackgroundColor 39 39 39
 	PlayEffect White Temp
 	MinimapIcon 2 White Circle
-	SetBackgroundColor 39 39 39
 
 # Uncommon magic currency
 Show
