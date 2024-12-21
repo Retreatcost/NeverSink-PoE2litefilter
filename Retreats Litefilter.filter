@@ -301,6 +301,16 @@ PlayEffect White
 MinimapIcon 2 White Circle
 SetFontSize 40
 
+# Chance shard in endgame
+Show
+	AreaLevel >= 65
+	Class "Currency"
+	BaseType "Chance Shard"
+	SetTextColor 170 158 130
+	SetBorderColor 190 178 135
+	SetBackgroundColor 49 25 0
+	SetFontSize 33
+
 # Chance shard
 Show
 	Class "Currency"
@@ -308,6 +318,7 @@ Show
 	SetTextColor 170 158 130
 	SetBorderColor 190 178 135
 	SetBackgroundColor 49 25 0
+	PlayEffect Brown Temp
 	MinimapIcon 2 Brown Circle
 	SetFontSize 35
 
