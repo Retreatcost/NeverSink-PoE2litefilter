@@ -301,23 +301,17 @@ PlayEffect White
 MinimapIcon 2 White Circle
 SetFontSize 40
 
-# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+# Chance shard
 Show
-AreaLevel >= 65
-Class "Currency"
-BaseType "Chance Shard"
-SetTextColor 220 190 132
-SetFontSize 35
+	Class "Currency"
+	BaseType "Chance Shard"
+	SetTextColor 170 158 130
+	SetBorderColor 190 178 135
+	SetBackgroundColor 49 25 0
+	MinimapIcon 2 Brown Circle
+	SetFontSize 35
 
-# Currency Tier C: Vaal, Chaos, Exalt, Exotic
-Show
-Class "Currency"
-BaseType "Chance Shard"
-SetTextColor 220 190 132
-MinimapIcon 2 Grey Circle
-SetFontSize 35
-
-# Quality Currency in endgame
+# Quality currency in endgame
 Show
 	AreaLevel >= 65
 	Class "Currency"
@@ -327,7 +321,7 @@ Show
 	SetBorderColor 190 178 135 180
 	SetBackgroundColor 39 39 39
 
-# Quality Currency
+# Quality currency
 Show
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone" "Arcanist's Etcher" "Armourer's Scrap"
@@ -338,7 +332,7 @@ Show
 	MinimapIcon 2 White Circle
 	SetBackgroundColor 39 39 39
 
-# Uncommon Magic Currency
+# Uncommon magic currency
 Show
 	Class "Currency"
 	BaseType "Orb of Transmutation" "Regal Shard"
@@ -347,7 +341,7 @@ Show
 	SetBorderColor 190 178 135
 	SetBackgroundColor 0 20 39
 
-# Common Magic Currency
+# Common magic currency
 Show
 	Class "Currency"
 	BaseType "Orb of Augmentation" "Transmutation Shard"
