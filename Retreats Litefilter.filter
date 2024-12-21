@@ -319,7 +319,13 @@ SetFontSize 35
 
 Show
 Class "Currency"
-BaseType "Scroll of Wisdom" "Shard"
+BaseType "Shard"
+
+Show
+	Class == "Stackable Currency"
+	BaseType == "Scroll of Wisdom"
+	SetFontSize 35
+	SetBackgroundColor 24 4 4
 
 # Unknown currency
 Show
