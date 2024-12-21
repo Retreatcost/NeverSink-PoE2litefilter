@@ -303,19 +303,41 @@ SetFontSize 40
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
-AreaLevel >= 70
+AreaLevel >= 65
 Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Regal Shard" "Chance Shard"
+BaseType "Regal Shard" "Chance Shard"
 SetTextColor 220 190 132
 SetFontSize 35
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
 Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Regal Shard" "Chance Shard"
+BaseType "Regal Shard" "Chance Shard"
 SetTextColor 220 190 132
 MinimapIcon 2 Grey Circle
 SetFontSize 35
+
+
+# Quality Currency in endgame
+Show
+	AreaLevel >= 65
+	Class "Currency"
+	BaseType "Blacksmith's Whetstone" "Arcanist's Etcher" "Armourer's Scrap"
+	SetFontSize 33
+	SetTextColor 170 158 130
+	SetBorderColor 190 178 135 180
+	SetBackgroundColor 39 39 39
+
+# Quality Currency
+Show
+	Class "Currency"
+	BaseType "Blacksmith's Whetstone" "Arcanist's Etcher" "Armourer's Scrap"
+	SetFontSize 35
+	SetTextColor 170 158 130
+	SetBorderColor 190 178 135 180
+	PlayEffect White Temp
+	MinimapIcon 2 White Circle
+	SetBackgroundColor 39 39 39
 
 # Uncommon Magic Currency
 Show
