@@ -268,16 +268,39 @@ PlayEffect White
 MinimapIcon 2 White Circle
 SetFontSize 40
 
+# Simulacrum Splinters
 Show
-Class "Currency"
-BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 100
-PlayEffect White Temp
-MinimapIcon 1 White Kite
-SetFontSize 35
+	Class "Currency"
+	BaseType "Simulacrum Splinter"
+	SetFontSize 35
+	SetTextColor 230 230 230
+	SetBorderColor 130 130 130
+	SetBackgroundColor 64 64 64
+	PlayEffect White Temp
+	MinimapIcon 2 Grey Kite
+	PlayAlertSound 13 300
+
+# Breach Splinters
+Show
+	Class "Currency"
+	BaseType "Breach Splinter"
+	SetFontSize 35
+	SetTextColor 230 230 230
+	SetBorderColor 130 15 255
+	SetBackgroundColor 65 20 80
+	PlayEffect Purple Temp
+	MinimapIcon 2 Purple Kite
+	PlayAlertSound 13 300
+
+# Artifacts
+Show
+	Class "Currency"
+	BaseType " Artifact" 
+	SetTextColor 101 158 211
+	PlayAlertSound 1 200
+	PlayEffect Grey Temp
+	MinimapIcon 1 White Kite
+	SetFontSize 35
 
 # Omens
 Show
