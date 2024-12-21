@@ -54,26 +54,41 @@ MinimapIcon 0 Red Star
 #--------------------------
 
 Show
-AreaLevel >= 70
-StackSize >= 1000
-BaseType == "Gold"
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-PlayEffect Orange Temp
+	StackSize >= 3000
+	BaseType == "Gold"
+	SetFontSize 45
+	SetTextColor 235 200 110
+	SetBorderColor 235 200 110
+	SetBackgroundColor 20 20 0
+	PlayAlertSound 2 300
+	PlayEffect Yellow Temp
+	MinimapIcon 0 Yellow Circle
 
 Show
-AreaLevel < 70
-StackSize >= 500
-BaseType == "Gold"
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-PlayEffect Orange Temp
+	StackSize >= 500
+	BaseType == "Gold"
+	SetFontSize 40
+	SetTextColor 198 171 88
+	MinimapIcon 1 Yellow Circle
 
 Show
-BaseType == "Gold"
-SetTextColor 180 180 180
-SetBorderColor 0 0 0 255
-SetBackgroundColor 0 0 0 180
+	StackSize >= 150
+	BaseType == "Gold"
+	SetFontSize 35
+  SetTextColor 198 171 88
+
+Show
+	StackSize >= 50
+	BaseType == "Gold"
+	AreaLevel <= 68
+	SetFontSize 30
+	SetTextColor 198 171 88
+
+Show
+	BaseType == "Gold"
+	SetFontSize 25
+	SetTextColor 198 171 88
+	SetBackgroundColor 20 20 0 180
 
 #--------------------------
 # Uncut Gems
