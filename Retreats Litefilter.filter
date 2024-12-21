@@ -305,18 +305,17 @@ SetFontSize 40
 Show
 AreaLevel >= 65
 Class "Currency"
-BaseType "Regal Shard" "Chance Shard"
+BaseType "Chance Shard"
 SetTextColor 220 190 132
 SetFontSize 35
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
 Class "Currency"
-BaseType "Regal Shard" "Chance Shard"
+BaseType "Chance Shard"
 SetTextColor 220 190 132
 MinimapIcon 2 Grey Circle
 SetFontSize 35
-
 
 # Quality Currency in endgame
 Show
