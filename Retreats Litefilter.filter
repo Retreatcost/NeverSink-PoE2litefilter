@@ -67,25 +67,25 @@ Show
 Show
 	StackSize >= 1000
 	BaseType == "Gold"
-	SetFontSize 30
+	SetFontSize 32
 	SetTextColor 198 171 88
 	MinimapIcon 1 Yellow Circle
 
 Show
 	StackSize >= 500
 	BaseType == "Gold"
-	SetFontSize 27
+	SetFontSize 30
   SetTextColor 198 171 88
 
 Show
 	StackSize >= 100
 	BaseType == "Gold"
-	SetFontSize 25
+	SetFontSize 27
 	SetTextColor 198 171 88
 
 Show
 	BaseType == "Gold"
-	SetFontSize 23
+	SetFontSize 25
 	SetTextColor 198 171 88
 	SetBackgroundColor 20 20 0 180
 
