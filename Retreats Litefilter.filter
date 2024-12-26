@@ -1,52 +1,46 @@
 #===============================================================================================================
-# NeverSink's Indepth Loot Filter - for Path of Exile
+# Retreat's Loot Filter for Path of Exile 2
 #===============================================================================================================
-# VERSION:  0.2.1
-# AUTHOR:   NeverSink
+# VERSION:  0.2.2-rtt
+# AUTHOR:   NeverSink, Retreat
 #
-# This is a mini-filter designed for early PoE2 EA gameplay. I will eventually replace it with a full-fledged filter
-# With FilterBlade.xyz support. This filter focuses more on highlighting loot, rather than hiding
-#
-# TWITTER: @NeverSinkDev
-# DISCORD: https://discord.gg/mye6xhF
-# TWITCH:  https://www.twitch.tv/neversink
-# PATREON: https://www.patreon.com/Neversink
+# This is a loot filter based on NeverSink's LiteFilter
 
 #--------------------------
 # Overrides - Uniques, Valuables
 #--------------------------
 
 Show
-Rarity Unique
-SetTextColor 175 96 37 255
-SetBorderColor 175 96 37 255
-SetBackgroundColor 53 13 13 255
-PlayAlertSound 3 300
-PlayEffect Brown
-MinimapIcon 1 Brown Star
-SetFontSize 40
+	Rarity Unique
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 53 13 13 255
+	PlayAlertSound 3 300
+	PlayEffect Brown
+	MinimapIcon 1 Brown Star
+	SetFontSize 40
 
 ## Divine Orb Style
 Show
-Class "Currency"
-BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
-SetFontSize 45
-SetTextColor 255 0 0 255
-SetBorderColor 255 0 0 255
-SetBackgroundColor 255 255 255 255
-PlayAlertSound 6 300
-PlayEffect Red
-MinimapIcon 0 Red Star
+	Class "Currency"
+	BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
 
 Show
-BaseType "Distilled Isolation" "Distilled Suffering"
-SetFontSize 45
-SetTextColor 255 0 0 255
-SetBorderColor 255 0 0 255
-SetBackgroundColor 255 255 255 255
-PlayAlertSound 6 300
-PlayEffect Red
-MinimapIcon 0 Red Star
+	BaseType "Distilled Isolation" "Distilled Suffering"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
 
 
 #--------------------------
@@ -95,59 +89,57 @@ Show
 
 # Always make Spirit gems pop
 Show
-BaseType "Uncut Spirit Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+	BaseType "Uncut Spirit Gem"
+	SetFontSize 40
+	SetTextColor 110 190 190
+	SetBorderColor 70 130 130
+	PlayEffect Grey Temp
+	MinimapIcon 1 Grey Hexagon
 
 # Make support gems pop during campaign
 Show
-AreaLevel < 68
-BaseType "Uncut Support Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+	AreaLevel < 65
+	BaseType "Uncut Support Gem"
+	SetFontSize 40
+	SetTextColor 110 190 190
+	SetBorderColor 70 130 130
+	PlayEffect Grey Temp
+	MinimapIcon 1 Grey Hexagon
 
 # Make skill gems pop during campaign
 Show
-AreaLevel < 65
-BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+	AreaLevel < 65
+	BaseType "Uncut Skill Gem"
+	SetFontSize 40
+	SetTextColor 110 190 190
+	SetBorderColor 70 130 130
+	PlayEffect Grey Temp
+	MinimapIcon 1 Grey Hexagon
 
 # Gems up to level 18 in maps don't get a special highlight
 Show
-ItemLevel <= 18
-BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-SetFontSize 35
+	ItemLevel <= 18
+	BaseType "Uncut Skill Gem"
+	SetFontSize 35
+	SetTextColor 110 190 190
+	SetBorderColor 70 130 130
 
 Show
-BaseType "Uncut Support Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-SetFontSize 35
+	BaseType "Uncut Support Gem"
+	SetFontSize 35
+	SetTextColor 110 190 190
+	SetBorderColor 70 130 130
 
 # Level 19 gems and up in maps get a special highlight
 Show
-BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+	BaseType "Uncut Skill Gem"
+	SetFontSize 45
+	SetTextColor 20 240 240
+	SetBorderColor 20 240 240
+	SetBackgroundColor 6 0 60
+	PlayAlertSound 2 300
+	PlayEffect Green
+	MinimapIcon 0 Green Hexagon
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -155,68 +147,79 @@ SetFontSize 40
 
 # Special A Tier - League specific socketables and jewels
 Show 
-BaseType "Soul Core" "Timeless"
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-SetFontSize 45
-MinimapIcon 0 Cyan Diamond
-PlayAlertSound 2 300
-PlayEffect Cyan
+	BaseType "Soul Core" "Timeless"
+	SetTextColor 0 240 190
+	SetBorderColor 0 240 190
+	SetFontSize 45
+	MinimapIcon 0 Cyan Diamond
+	PlayAlertSound 2 300
+	PlayEffect Cyan
 
 # Special Highlight - Breach Rings
 Show 
-Rarity Rare
-BaseType == "Breach Ring"
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-SetFontSize 40
-MinimapIcon 1 Cyan Diamond
-PlayEffect Cyan
-PlayAlertSound 2 300
+	Rarity Rare
+	BaseType == "Breach Ring"
+	SetTextColor 0 240 190
+	SetBorderColor 0 240 190
+	SetBackgroundColor 20 20 0
+	SetFontSize 40
+	MinimapIcon 1 Cyan Diamond
+	PlayEffect Cyan
+	PlayAlertSound 2 300
 
 Show 
-Rarity <= Magic
-BaseType == "Breach Ring"
-SetTextColor 0 240 190
-SetFontSize 35
-MinimapIcon 2 Cyan Diamond
-PlayEffect Cyan Temp
+	Rarity <= Magic
+	BaseType == "Breach Ring"
+	SetTextColor 0 240 190
+	SetBackgroundColor 20 20 0
+	SetFontSize 35
+	MinimapIcon 2 Cyan Diamond
+	PlayEffect Cyan Temp
 
 # Special A Tier - Sanctum Relics
 Show 
-Class "Relic"
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-SetFontSize 40
-MinimapIcon 1 Cyan Diamond
-PlayAlertSound 2 300
-PlayEffect Cyan
+	Class "Relic"
+	SetTextColor 0 240 190
+	SetBorderColor 0 240 190
+	SetFontSize 40
+	MinimapIcon 1 Cyan Diamond
+	PlayAlertSound 2 300
+	PlayEffect Cyan
 
-# Special A Tier - Rare Jewels
+# Rare jewels
 Show
-Class "Jewel"
-Rarity <= Rare
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-SetFontSize 40
-MinimapIcon 1 Cyan Diamond
-PlayEffect Cyan
-PlayAlertSound 2 300
+	Rarity Rare
+	Class "Jewel"
+	SetFontSize 45
+	SetTextColor 220 220 0 255
+	SetBorderColor 220 220 0 255
+	SetBackgroundColor 120 120 0 225
+	PlayEffect Grey Temp
+	MinimapIcon 2 Yellow Pentagon
+
+# Generic Jewels
+Show
+	Rarity Normal Magic
+	Class "Jewel"
+	SetFontSize 40
+	SetTextColor 0 75 250 255
+	SetBorderColor 0 75 250 255
+	SetBackgroundColor 0 20 40 255
 
 # Special B Tier - Any Runes and Charms
 Show 
-BaseType " Rune" " Charm"
-SetTextColor 0 240 190
-PlayEffect Cyan Temp
+	BaseType " Rune" " Charm"
+	SetTextColor 0 240 190
+	PlayEffect Cyan Temp
 
 #--------------------------
 # Scroll of Wisdom High Level Hiding
 #--------------------------
 
 Hide
-BaseType "Scroll of Wisdom"
-AreaLevel >= 65
-Rarity <= Magic
+	BaseType "Scroll of Wisdom"
+	AreaLevel >= 65
+	Rarity <= Magic
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -224,27 +227,27 @@ Rarity <= Magic
 
 # Rarer currency
 Show
-Class "Currency"
-BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
-SetTextColor 255 190 0
-SetBorderColor 255 190 0
-SetBackgroundColor 170 158 130 225
-PlayAlertSound 1 300
-PlayEffect Yellow
-MinimapIcon 1 Yellow Circle
-SetFontSize 45
+	Class "Currency"
+	BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+	SetTextColor 255 190 0
+	SetBorderColor 255 190 0
+	SetBackgroundColor 170 158 130 225
+	PlayAlertSound 1 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+	SetFontSize 45
 
 # Exalted
 Show
-Class "Currency"
-BaseType  "Exalted Orb"
-SetFontSize 45
-SetTextColor 170 158 130
-SetBorderColor 210 178 135 230
-SetBackgroundColor 113 98 78 230
-PlayAlertSound 5 300
-PlayEffect Yellow
-MinimapIcon 0 Yellow Circle
+	Class "Currency"
+	BaseType  "Exalted Orb"
+	SetFontSize 45
+	SetTextColor 170 158 130
+	SetBorderColor 210 178 135 230
+	SetBackgroundColor 113 98 78 230
+	PlayAlertSound 5 300
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Circle
 
 # Misc
 Show
@@ -307,7 +310,7 @@ Show
 	BaseType " Artifact" 
 	SetFontSize 35
 	SetTextColor 101 158 211
-	PlayAlertSound 1 200
+	PlayAlertSound 1 50
 	PlayEffect Grey Temp
 	MinimapIcon 1 White Kite
 
@@ -415,8 +418,8 @@ Show
 	SetBackgroundColor 18 15 12
 
 Show
-Class "Currency"
-BaseType "Shard"
+	Class "Currency"
+	BaseType "Shard"
 
 Show
 	Class "Currency"
@@ -426,102 +429,106 @@ Show
 
 # Unknown currency
 Show
-Class "Currency"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect Pink
-MinimapIcon 1 White Circle
+	Class "Currency"
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect Pink
+	MinimapIcon 1 White Circle
 
 Show
-Class "Pinnacle Keys"
-SetTextColor 255 207 255
-SetBorderColor 255 207 255
-SetBackgroundColor 65 20 80
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 1 Yellow Square
-SetFontSize 40
+	Class "Pinnacle Keys"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 Yellow Square
+	SetFontSize 40
 
 Show
-BaseType "Simulacrum" " Tablet" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
-SetTextColor 255 207 255
-SetBorderColor 255 207 255
-SetBackgroundColor 65 20 80
-PlayAlertSound 2 300
-PlayEffect Purple
-MinimapIcon 1 Purple Square
-SetFontSize 45
+	BaseType "Simulacrum" " Tablet" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2 300
+	PlayEffect Purple
+	MinimapIcon 1 Purple Square
+	SetFontSize 45
 
 Show
-BaseType "Barya" "Ultimatum"
-SetTextColor 255 207 255
-SetBorderColor 255 207 255
-SetBackgroundColor 65 20 80
-PlayAlertSound 2 300
-PlayEffect Grey
-MinimapIcon 1 Grey Square
-SetFontSize 40
+	BaseType "Barya" "Ultimatum"
+	SetFontSize 40
+	SetTextColor 54 216 54 255
+	SetBorderColor 54 216 54 255
+	SetBackgroundColor 92 52 24 191
+	PlayEffect Red
+	MinimapIcon 0 Red Triangle
+	PlayAlertSound 4 300
 
 #--------------------------
 # Waystones
 #--------------------------
 
 Show
-WaystoneTier < 10
-AreaLevel > 77
-BaseType "Waystone"
-Rarity <= Rare
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-SetFontSize 35
+	BaseType "Waystone"
+	WaystoneTier >= 11
+	SetFontSize 45
+	SetTextColor 230 230 230
+	SetBorderColor 255 0 0
+	SetBackgroundColor 20 20 0
+	PlayEffect Red
+	MinimapIcon 1 Red Cross
+	PlayAlertSound 4 300
 
 Show
-WaystoneTier < 5
-AreaLevel > 74
-BaseType "Waystone"
-Rarity <= Rare
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-SetFontSize 35
+	BaseType "Waystone"
+	WaystoneTier <= 10
+	SetFontSize 40
+	SetTextColor 230 230 230
+	SetBorderColor 255 190 0
+	SetBackgroundColor 20 20 0
+	PlayAlertSound 4 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Cross
 
 Show
-BaseType "Waystone"
-Rarity <= Rare
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-PlayAlertSound 4 300
-PlayEffect White
-MinimapIcon 1 White Square
-SetFontSize 40
+	BaseType "Waystone"
+	WaystoneTier <= 5
+	SetFontSize 40
+	SetTextColor 230 230 230
+	SetBackgroundColor 20 20 0
+	PlayAlertSound 4 300
+	PlayEffect White
+	MinimapIcon 2 White Cross
 
 #--------------------------
 # Value Rares
 #--------------------------
 
 Show
-Class "Rings" "Amulets" "Belts"
-Rarity Rare
-SetFontSize 40
-SetTextColor 233 206 75
-SetBorderColor 233 206 75
-PlayEffect Yellow
-MinimapIcon 1 Yellow Diamond
+	Class "Rings" "Amulets" "Belts"
+	Rarity Rare
+	SetFontSize 40
+	SetTextColor 233 206 75
+	SetBorderColor 233 206 75
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Diamond
 
 #--------------------------
 # Rings, Amulets, Belts
 #--------------------------
 
 Show
-Rarity Normal
-Class "Rings" "Amulets" "Belts"
-SetFontSize 40
+	Rarity Normal
+	Class "Rings" "Amulets" "Belts"
+	SetFontSize 40
 
 Show
-Class "Rings" "Amulets" "Belts"
-Rarity Magic
-SetFontSize 40
+	Class "Rings" "Amulets" "Belts"
+	Rarity Magic
+	SetFontSize 40
 
 #--------------------------
 # Salvagable Items
@@ -572,47 +579,47 @@ SetFontSize 35
 #--------------------------
 
 Hide
-Quality = 0
-AreaLevel > 70
-Rarity <= Magic
-Class "Flasks"
+	Quality = 0
+	AreaLevel > 70
+	Rarity <= Magic
+	Class "Flasks"
 
 Hide
-AreaLevel >= 78
-Rarity <= Magic
-DropLevel < 65
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+	AreaLevel >= 78
+	Rarity <= Magic
+	DropLevel < 65
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 75
-Rarity <= Magic
-DropLevel < 64
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+	AreaLevel > 75
+	Rarity <= Magic
+	DropLevel < 64
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 73
-Rarity <= Magic
-DropLevel < 60
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+	AreaLevel > 73
+	Rarity <= Magic
+	DropLevel < 60
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 72
-Rarity <= Magic
-DropLevel < 55
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+	AreaLevel > 72
+	Rarity <= Magic
+	DropLevel < 55
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
-AreaLevel > 74
-Rarity <= Magic
-DropLevel < 50
-Class "Quivers"
+	AreaLevel > 74
+	Rarity <= Magic
+	DropLevel < 50
+	Class "Quivers"
 
 Hide
-AreaLevel > 70
-Rarity <= Normal
-DropLevel < 50
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+	AreaLevel > 70
+	Rarity <= Normal
+	DropLevel < 50
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 #--------------------------
 # OPTIONAL RULES
@@ -645,4 +652,4 @@ Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One 
 # Get a new filter from www.filterblade.xyz
 
 Show
-BaseType "Expert Laced Boots"
+	BaseType "Expert Laced Boots"
